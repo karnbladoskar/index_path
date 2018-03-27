@@ -58,9 +58,3 @@ def load_data(market_dir, file_names):
     data['Closing price'] = data['High price'].str.replace(',', '.')
 
     return data
-
-
-def drop_columns(df, cols):
-    """
-    """
-    return df.drop([cols], axis=1)
